@@ -1,0 +1,28 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: movistarports.nurio.me
+spec:
+  group: nurio.me
+  names:
+    kind: MovistarPort
+    listKind: MovistarPortList
+    plural: movistarports
+    singular: movistarport
+  scope: Namespaced
+  versions:
+    - name: v1alpha1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                externalPort:
+                  type: integer
+                  format: int32
+                protocol:
+                  type: string
