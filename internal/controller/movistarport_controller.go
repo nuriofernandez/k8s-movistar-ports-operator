@@ -57,7 +57,7 @@ func (r *MovistarPortReconciler) Reconcile(ctx context.Context, req ctrl.Request
 	err = hguRouter.OpenPort(hgu.OpenPort{
 		Name:              "k8s-m-" + strconv.Itoa(int(mp.Spec.ExternalPort)),
 		Protocol:          hgu.Protocol(mp.Spec.Protocol),
-		Address:           "192.168.1.36", // TODO Hardcoded for now
+		Address:           mp.Spec.Host,
 		ExternalPortStart: int(mp.Spec.ExternalPort),
 		ExternalPortEnd:   0,
 		InternalPortStart: int(mp.Spec.ExternalPort),

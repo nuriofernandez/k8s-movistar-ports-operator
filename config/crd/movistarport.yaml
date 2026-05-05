@@ -26,3 +26,5 @@ spec:
                   format: int32
                 protocol:
                   type: string
+                host:
+                  type: string
