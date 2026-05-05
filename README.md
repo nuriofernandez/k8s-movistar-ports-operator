@@ -2,9 +2,15 @@
 
 # Movistar Ports K8S operator
 
-This kubernetes operator handles the port opening for Movistar routers.
+This Kubernetes operator automates **Port Forwarding** and **NAT configuration** specifically for **Movistar HGU** routers. It allows you to manage external access to your home cluster using native K8s resources instead of manual router web-interface configuration.
 
-Useful if you are using K8S at home!
+Very useful if you are using [Movistar / O2](https://ipinfo.io/AS3352) and running K8S at home!
+
+# How does it work?
+
+This operator relies on [nuriofernandez/movistarapi](https://github.com/nuriofernandez/movistarapi) go library. Feel free to visit it if you will like to implement it on another project of yours!
+
+Take into account both this operator and the movistarapi projects are under developement. Expect breaking changes!
 
 # How to install?
 
