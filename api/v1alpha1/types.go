@@ -15,6 +15,7 @@ var (
 
 type MovistarPortSpec struct {
 	ExternalPort int32  `json:"externalPort"`
+	InternalPort int32  `json:"internalPort"`
 	Protocol     string `json:"protocol"`
 	Host         string `json:"host"`
 }

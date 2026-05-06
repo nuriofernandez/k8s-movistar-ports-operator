@@ -60,7 +60,7 @@ func (r *MovistarPortReconciler) Reconcile(ctx context.Context, req ctrl.Request
 		Address:           mp.Spec.Host,
 		ExternalPortStart: int(mp.Spec.ExternalPort),
 		ExternalPortEnd:   0,
-		InternalPortStart: int(mp.Spec.ExternalPort),
+		InternalPortStart: int(mp.Spec.InternalPort),
 		Enabled:           true,
 		Interface:         "ppp0.1",
 	})

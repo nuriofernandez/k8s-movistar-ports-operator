@@ -24,6 +24,9 @@ spec:
                 externalPort:
                   type: integer
                   format: int32
+                internalPort:
+                  type: integer
+                  format: int32
                 protocol:
                   type: string
                 host:

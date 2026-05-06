@@ -36,6 +36,7 @@ metadata:
   name: HttpPort
 spec:
   externalPort: 80
+  internalPort: 80
   host: 192.168.1.100
   protocol: TCP
 ```
